@@ -1,7 +1,6 @@
-# CropForesight🌾
+# CropForesight🌾🌾
 
-
-CropForesight is a powerful crop recommendation website that helps farmers and agriculture enthusiasts make informed decisions about the best crop to cultivate on a given land. By utilizing machine learning algorithms and various environmental parameters such as nitrogen value of soil, phosphorus value, rainfall, pH, potassium, humidity, and temperature. , CropForesight predicts the optimal crop choice, maximizing productivity and yield.
+CropForesight is a powerful crop recommendation website that helps farmers and agriculture enthusiasts make informed decisions about the best crop to cultivate on a given land. By utilizing machine learning algorithms and various environmental parameters such as nitrogen value of soil, phosphorus value, rainfall, pH, potassium, humidity, and temperature. CropForesight predicts the optimal crop choice, maximizing productivity and yield.
 
 # Table of Contents ✨📑
 - Introduction
@@ -52,57 +51,46 @@ If you want to contribute to CropForesight or run it locally for development pur
 
 1. Clone the frontend repository:
 
-   ```
    git clone https://github.com/abhijeet141/CropForesight-FrontEnd.git
-   ```
+ 
 
 2. Change to the project directory:
 
-   ```
    cd CropForesight-FrontEnd
-   ```
-
+ 
 3. Install the required dependencies:
 
-   ```
    npm install
-   ```
-
+ 
 4. Run the frontend:
 
-   ```
    npm start
-   ```
 
 5. Clone the backend repository:
 
-   ```
    git clone https://github.com/abhijeet141/CropForesight_BackEnd.git
-   ```
 
 6. Change to the CropForesight_BackEnd directory:
 
-   ```
    cd CropForesight_BackEnd
-   ```
+  
 
 7. Install the required dependencies:
 
-   ```
    pip install -r requirements.txt
-   ```
+
 
 8. Run the backend:
 
-   ```
    uvicorn main:app --reload
-   ```
 
 9. Open the website in your browser at [http://localhost:3000](http://localhost:3000) to access the local instance of CropForesight.
 
 ## Deployment🚀🚀
 
-CropForesight's frontend is deployed and can be accessed online at [https://crop-foresight-front-end.vercel.app/](https://crop-foresight-front-end.vercel.app/). Feel free to explore the website and witness the power of smart crop recommendation firsthand!
+✅ CropForesight's frontend is deployed and can be accessed online at [https://crop-foresight-front-end.vercel.app/](https://crop-foresight-front-end.vercel.app/). 
+
+✅ Feel free to explore the website and witness the power of smart crop recommendation firsthand!
 
 
 # License 🪪
