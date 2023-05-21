@@ -41,11 +41,14 @@ CropForesight leverages the following technologies:
 To experience the power of CropForesight, follow these simple steps:
 
 ✅ Visit the CropForesight website: [https://abhijeet141.github.io/CropForesight-FrontEnd/](https://abhijeet141.github.io/CropForesight-FrontEnd/).
+
 ✅ Enter the required details such as soil nitrogen value, phosphorus value, rainfall, pH, potassium, humidity, and temperature.
+
 ✅ Click on the "Recommend Crop" button to generate the optimal crop recommendation.
+
 ✅ Explore the recommended crop and gain insights into its suitability for your land.
 
-## Local Development ✅
+## Local Development ❇️✨
 
 If you want to contribute to CropForesight or run it locally for development purposes, follow these steps:
 
@@ -96,19 +99,6 @@ If you want to contribute to CropForesight or run it locally for development pur
 # License 🪪
 This project is licensed under the MIT License.
 
-Please feel free to modify the sections and add any additional information or badges relevant to your project. Let me know if you need further help!
-
-
-
-
-
-
-
-
-
-
-
-
-
+Please feel free to modify the sections and add any additional information or badges relevant to your project. Let me know if you need further help.
 
 
