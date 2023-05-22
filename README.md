@@ -48,6 +48,21 @@ To experience the power of CropForesight, follow these simple steps:
 
 ✅ Explore the recommended crop and gain insights into its suitability for your land.
 
+# ✅ Contributing
+
+We welcome contributions from everyone. Here are some guidelines to get started:
+
+1. Fork the repository and create your branch: git checkout -b your-branch-name 
+
+2. Make your changes and commit them: git commit -m 'Add some feature' 
+
+3. Push to your forked repository: git push origin your-branch-name
+
+4.  Open a pull request to the main repository's branch
+
+Please follow the cotribution guide in all your interactions with the project
+
+
 ## Local Development ❇️✨
 
 If you want to contribute to CropForesight or run it locally for development purposes, follow these steps:
