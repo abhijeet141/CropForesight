@@ -2,6 +2,12 @@
 
 CropForesight is a powerful crop recommendation website that helps farmers and agriculture enthusiasts make informed decisions about the best crop to cultivate on a given land. By utilizing machine learning algorithms and various environmental parameters such as nitrogen value of soil, phosphorus value, rainfall, pH, potassium, humidity, and temperature. CropForesight predicts the optimal crop choice, maximizing productivity and yield.
 
+**Frontend Code** ✨-  
+ https://github.com/abhijeet141/CropForesight-FrontEnd 
+ 
+ **Backend Code** ✨-  
+ https://github.com/abhijeet141/CropForesight_BackEnd
+
 # Table of Contents ✨📑
 - Introduction
 - Features
@@ -18,12 +24,6 @@ CropForesight is a powerful crop recommendation website that helps farmers and a
 - Efficient machine learning model leveraging Gaussian Naïve Bayes algorithm.
 - Responsive frontend developed using ReactJS for seamless user experience.
 - Scalable backend powered by FastAPI for quick data processing.
-
-**Frontend Code** ✨-  
- https://github.com/abhijeet141/CropForesight-FrontEnd 
-
-**Backend Code** ✨-    
- https://github.com/abhijeet141/CropForesight_BackEnd
 
 
 ## Technologies 👨‍🔧
