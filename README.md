@@ -1,5 +1,21 @@
 # CropForesight🌾
 
+
+<div align="center">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+<img src="https://forthebadge.com/images/badges/uses-brains.svg" />
+<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+  <br>
+ <img src="https://img.shields.io/github/repo-size/abhijeet141/CropForesight?style=for-the-badge" />
+ <img src="https://img.shields.io/github/issues/abhijeet141/CropForesight?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed-raw/abhijeet141/CropForesight?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-closed/abhijeet141/CropForesight?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-raw/abhijeet141/CropForesight?style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/abhijeet141/CropForesight?style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/abhijeet141/CropForesight?style=for-the-badge" />
+  <img src="https://img.shields.io/github/contributors-anon/abhijeet141/CropForesight?style=for-the-badge" />
+ 
+ </div>
 CropForesight is a powerful crop recommendation website that helps farmers and agriculture enthusiasts make informed decisions about the best crop to cultivate on a given land. By utilizing machine learning algorithms and various environmental parameters such as nitrogen value of soil, phosphorus value, rainfall, pH, potassium, humidity, and temperature. CropForesight predicts the optimal crop choice, maximizing productivity and yield.
 
 **Frontend Code** ✨-  
