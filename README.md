@@ -71,11 +71,11 @@ To experience the power of CropForesight, follow these simple steps:
 
 We welcome contributions from everyone. Here are some guidelines to get started:
 
-1. Fork the repository and create your branch: git checkout -b your-branch-name 
+1. Fork the repository and create your branch: ```git checkout -b your-branch-name``` 
 
-2. Make your changes and commit them: git commit -m 'Add some feature' 
+2. Make your changes and commit them: ```git commit -m 'Add some feature'``` 
 
-3. Push to your forked repository: git push origin your-branch-name
+3. Push to your forked repository: ```git push origin your-branch-name```
 
 4.  Open a pull request to the main repository's branch
 
@@ -89,38 +89,38 @@ If you want to contribute to CropForesight or run it locally for development pur
 
 1. Clone the frontend repository:
 
-   git clone https://github.com/abhijeet141/CropForesight-FrontEnd.git
+   ```git clone https://github.com/abhijeet141/CropForesight-FrontEnd.git```
  
 
 2. Change to the project directory:
 
-   cd CropForesight-FrontEnd
+   ```cd CropForesight-FrontEnd```
  
 3. Install the required dependencies:
 
-   npm install
+   ```npm install```
  
 4. Run the frontend:
 
-   npm start
+   ```npm start```
 
 5. Clone the backend repository:
 
-   git clone https://github.com/abhijeet141/CropForesight_BackEnd.git
+   ```git clone https://github.com/abhijeet141/CropForesight_BackEnd.git```
 
 6. Change to the CropForesight_BackEnd directory:
 
-   cd CropForesight_BackEnd
+   ```cd CropForesight_BackEnd```
   
 
 7. Install the required dependencies:
 
-   pip install -r requirements.txt
+   ```pip install -r requirements.txt```
 
 
 8. Run the backend:
 
-   uvicorn main:app --reload
+   ```uvicorn main:app --reload```
 
 9. Open the website in your browser at [http://localhost:3000](http://localhost:3000) to access the local instance of CropForesight.
 
