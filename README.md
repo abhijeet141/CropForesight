@@ -108,7 +108,7 @@ If you want to contribute to CropForesight or run it locally for development pur
 
 1. Clone the frontend repository:
 
-   ```git clone https://github.com/abhijeet141/CropForesight-FrontEnd.git```
+   ```git clone https://github.com/your_username/CropForesight-FrontEnd.git```
  
 
 2. Change to the project directory:
@@ -125,7 +125,7 @@ If you want to contribute to CropForesight or run it locally for development pur
 
 5. Clone the backend repository:
 
-   ```git clone https://github.com/abhijeet141/CropForesight_BackEnd.git```
+   ```git clone https://github.com/your_username/CropForesight_BackEnd.git```
 
 6. Change to the CropForesight_BackEnd directory:
 
