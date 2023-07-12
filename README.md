@@ -157,8 +157,11 @@ If you want to contribute to CropForesight or run it locally for development pur
   <img src="https://contrib.rocks/image?repo=abhijeet141/CropForesight" />
 </a>
 
-## License 🪪
-This project is licensed under the MIT License.
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Terms and conditions for use, reproduction and distribution are under the [MIT License](https://opensource.org/license/mit/).
+
 
 Please feel free to modify the sections and add any additional information or badges relevant to your project. Let me know if you need further help.
 <br><br>
