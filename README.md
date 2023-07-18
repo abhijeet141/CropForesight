@@ -140,8 +140,10 @@ If you want to contribute to CropForesight or run it locally for development pur
 8. Run the backend:
 
    ```uvicorn main:app --reload```
+    or
+   ```python -m uvicorn main:app --reload```
 
-9. Open the website in your browser at [http://localhost:3000](http://localhost:3000) to access the local instance of CropForesight.
+10. Open the website in your browser at [http://localhost:3000](http://localhost:3000) to access the local instance of CropForesight.
 
  
  <a href="#top">Back to top</a>
