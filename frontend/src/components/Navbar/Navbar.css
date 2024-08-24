@@ -1,0 +1,110 @@
+nav {
+  position: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 57);
+  z-index: 100;
+  padding: 0 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  
+}
+
+nav ul li {
+  margin-right: 3rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
+
+nav ul li a::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: #9864c9;
+  bottom: 0;
+}
+
+nav ul li a::before {
+  width: 0%;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+nav .visibility-desktop {
+  display: block;
+}
+
+nav .visibility-mobile {
+  display: none;
+}
+
+.modebtn{
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav .visibility-desktop {
+    display: none;
+  }
+
+  nav .visibility-mobile {
+    display: block;
+  }
+
+  nav .visibility-mobile img {
+    width: 30px;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: inherit;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgb(0, 0, 57);
+    padding-top: 10px;
+    transition: 2s ease-in-out;
+  }
+
+  .mobile-nav ul li {
+    padding-bottom: 3rem;
+    list-style: none;
+  }
+
+  .mobile-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
