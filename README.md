@@ -3,6 +3,7 @@
   
  <h1 align="center">CropForesight🌾</h1>
 CropForesight is a powerful crop recommendation website that helps farmers and agriculture enthusiasts make informed decisions about the best crop to cultivate on a given land. By utilizing machine learning algorithms and various environmental parameters such as nitrogen value of soil, phosphorus value, rainfall, pH, potassium, humidity, and temperature. CropForesight predicts the optimal crop choice, maximizing productivity and yield.
+In addition, CropForesight employs an AlexNet model for the classification of tomato leaf diseases. This model analyzes images of tomato leaves to identify and diagnose diseases, helping farmers take timely action to protect their crops.
 <br>
  
  
@@ -44,7 +45,9 @@ CropForesight is a powerful crop recommendation website that helps farmers and a
 
 - Intelligent crop recommendation based on soil composition, rainfall, pH, potassium, humidity, and temperature.
 - User-friendly interface to input land and environmental parameters.
+- Integrated with Cloudinary, enabling users to upload and analyze images of tomato leaves easily.
 - Efficient machine learning model leveraging Logistic Regression Algorithm.
+- Efficient Deep learning model leveraging Alexnet Architecture.
 - Responsive frontend developed using ReactJS for seamless user experience.
 - Scalable backend powered by FastAPI for quick data processing.
 
@@ -57,7 +60,7 @@ CropForesight leverages the following technologies:
 - **ReactJS** (Frontend): A popular JavaScript library for building interactive user interfaces.
 - **FastAPI** (Backend): A modern, fast (high-performance) web framework for building APIs with Python 3.7+.
 - **Logistic Regression** (Model): A machine learning algorithm used for classification tasks.
-
+- **AlexNet** (Model): A deep convolutional neural network architecture known for its ability to classify images with high accuracy.
  <a href="#top">Back to top</a>
 
 ## Usage ✅
@@ -124,18 +127,32 @@ If you want to contribute to CropForesight or run it locally for development pur
 5. Change to the CropForesight_BackEnd directory:
 
    ```cd BackEnd```
-  
 
-6. Install the required dependencies:
+6. Change to the CropForesight_BackEnd_ML directory:
+
+   ```cd backend_ML```
+
+7. Install the required dependencies:
 
    ```pip install -r requirements.txt```
 
-
-7. Run the backend:
+8. Run the backend:
 
    ```uvicorn main:app --reload```
 
-8. Open the website in your browser at [http://localhost:3000](http://localhost:3000) to access the local instance of CropForesight.
+9. Change to the CropForesight_BackEnd_DL directory:
+
+   ```cd backend_DL```
+
+10. Install the required dependencies:
+
+   ```pip install -r requirements.txt```
+
+11. Run the backend:
+
+   ```uvicorn main:app --reload```
+
+12. Open the website in your browser at [http://localhost:3000](http://localhost:3000) to access the local instance of CropForesight.
 
  
  <a href="#top">Back to top</a>
