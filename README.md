@@ -120,25 +120,22 @@ If you want to contribute to CropForesight or run it locally for development pur
 
    ```npm start```
 
-5. Clone the backend repository:
 
-   ```git clone https://github.com/your_username/CropForesight_BackEnd.git```
+5. Change to the CropForesight_BackEnd directory:
 
-6. Change to the CropForesight_BackEnd directory:
-
-   ```cd CropForesight_BackEnd```
+   ```cd BackEnd```
   
 
-7. Install the required dependencies:
+6. Install the required dependencies:
 
    ```pip install -r requirements.txt```
 
 
-8. Run the backend:
+7. Run the backend:
 
    ```uvicorn main:app --reload```
 
-9. Open the website in your browser at [http://localhost:3000](http://localhost:3000) to access the local instance of CropForesight.
+8. Open the website in your browser at [http://localhost:3000](http://localhost:3000) to access the local instance of CropForesight.
 
  
  <a href="#top">Back to top</a>
