@@ -44,7 +44,7 @@ CropForesight is a powerful crop recommendation website that helps farmers and a
 
 - Intelligent crop recommendation based on soil composition, rainfall, pH, potassium, humidity, and temperature.
 - User-friendly interface to input land and environmental parameters.
-- Efficient machine learning model leveraging Gaussian Naïve Bayes algorithm.
+- Efficient machine learning model leveraging Logistic Regression Algorithm.
 - Responsive frontend developed using ReactJS for seamless user experience.
 - Scalable backend powered by FastAPI for quick data processing.
 
@@ -56,7 +56,7 @@ CropForesight leverages the following technologies:
 
 - **ReactJS** (Frontend): A popular JavaScript library for building interactive user interfaces.
 - **FastAPI** (Backend): A modern, fast (high-performance) web framework for building APIs with Python 3.7+.
-- **Gaussian Naïve Bayes** (Model): A machine learning algorithm used for probabilistic classification tasks.
+- **Logistic Regression** (Model): A machine learning algorithm used for classification tasks.
 
  <a href="#top">Back to top</a>
 
