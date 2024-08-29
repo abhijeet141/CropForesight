@@ -9,6 +9,8 @@ In addition, CropForesight employs an AlexNet model for the classification of to
  
 <div align="center">
 
+<br>
+
  **Frontend Repository** ✨-  
  https://github.com/abhijeet141/CropForesight-FrontEnd 
 
