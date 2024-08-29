@@ -37,9 +37,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-cropRecomendation = pd.read_csv("./Crop_recommendation.csv")
+cropRecomendation = pd.read_csv("Crop_recommendation.csv")
 
-better_model = pickle.load(open("./crop_recomendation.pkl", "rb"))
+better_model = pickle.load(open("crop_recommendation.pkl", "rb"))
 
 
 class cropInfo(BaseModel):
