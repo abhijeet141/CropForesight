@@ -10,10 +10,7 @@ CropForesight is a powerful crop recommendation website that helps farmers and a
 
  **Frontend Repository** ✨-  
  https://github.com/abhijeet141/CropForesight-FrontEnd 
- 
- 
-**Backend Repository** ✨-  
- https://github.com/abhijeet141/CropForesight_BackEnd
+
  
  
  <br>
