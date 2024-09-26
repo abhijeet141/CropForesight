@@ -1,11 +1,14 @@
-import React from "react";
 import { Navigate } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth } from "@clerk/clerk-react";
 
 const ProtectedRoute = ({ element }) => {
-  const { isAuthenticated } = useAuth0();
+  const { isLoaded, isSignedIn } = useAuth();
 
-  return isAuthenticated ? element : <Navigate to="/" />;
+  if (!isLoaded) {
+    return null;
+  }
+
+  return isSignedIn ? element : <Navigate to="/" />;
 };
 
 export default ProtectedRoute;

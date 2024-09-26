@@ -1,23 +1,37 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import menu from "../../assets/menu-icon.webp";
+import close from '../../assets/close.png'
 import "../Navbar/Navbar.css";
-import { useAuth0 } from "@auth0/auth0-react";
+import {useAuth, SignInButton, SignOutButton  } from '@clerk/clerk-react'
 import { useLocation } from "react-router-dom";
 
-export default function Navbar({isHomePage}) {
+export default function Navbar() {
   const location = useLocation();
   const [showMenu, setShowMenu] = useState(false);
-  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  const [closed, setClosed] = useState(false)
+  const {isLoaded, isSignedIn } = useAuth()
+
 
   function closeMenu() {
     setShowMenu(false);
   }
+
+  const onHomePage = location.pathname === "/";
+
+  useEffect(() => {
+    if (showMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showMenu]);
+
+  if(!isLoaded){
+    return null;
+  }
   
-
-  const onHomePage = isHomePage || location.pathname === "/";
-
   return (
     <>
       <nav>
@@ -32,12 +46,12 @@ export default function Navbar({isHomePage}) {
         </div>
         <div className="visibility-desktop">
           <ul>
-            {!isAuthenticated && onHomePage ? (
+            {!isSignedIn && onHomePage ? (
               <li
                 style={{
                   backgroundColor:
-                    location.pathname === "/" ? "green" : "inherit",
-                  width: "5rem",
+                    location.pathname === "/" ? "#117660" : "inherit",
+                  width: "7rem",
                   height: "3rem",
                   borderRadius: "10px",
                   display: "flex",
@@ -45,21 +59,19 @@ export default function Navbar({isHomePage}) {
                   alignItems: "center",
                 }}
               >
-                <Link
-                  onClick={() =>
-                    loginWithRedirect()
-                  }
-                >
-                  Log In
+                <SignInButton>
+                <Link>
+                  Sign In
                 </Link>
+                </SignInButton>
               </li>
             ) : (
               <>
                 <li
                   style={{
                     backgroundColor:
-                      location.pathname === "/" ? "green" : "inherit",
-                    width: "5rem",
+                      location.pathname === "/" ? "#117660" : "inherit",
+                    width: "7rem",
                     height: "3rem",
                     borderRadius: "10px",
                     display: "flex",
@@ -69,39 +81,11 @@ export default function Navbar({isHomePage}) {
                 >
                   <Link to="/">Home</Link>
                 </li>
-                {/* <li
-                  style={{
-                    backgroundColor:
-                      location.pathname === "/about" ? "green" : "inherit",
-                    width: "5rem",
-                    height: "3rem",
-                    borderRadius: "10px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Link to="/about">About</Link>
-                </li> */}
                 <li
                   style={{
                     backgroundColor:
-                      location.pathname === "/contact" ? "green" : "inherit",
-                    width: "5rem",
-                    height: "3rem",
-                    borderRadius: "10px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li
-                  style={{
-                    backgroundColor:
-                      location.pathname === "/faq" ? "green" : "inherit",
-                    width: "5rem",
+                      location.pathname === "/faq" ? "#117660" : "inherit",
+                    width: "7rem",
                     height: "3rem",
                     borderRadius: "10px",
                     display: "flex",
@@ -114,8 +98,8 @@ export default function Navbar({isHomePage}) {
                 <li
                   style={{
                     backgroundColor:
-                      location.pathname === "/Weather" ? "green" : "inherit",
-                    width: "5rem",
+                      location.pathname === "/Weather" ? "#117660" : "inherit",
+                    width: "7rem",
                     height: "3rem",
                     borderRadius: "10px",
                     display: "flex",
@@ -129,9 +113,9 @@ export default function Navbar({isHomePage}) {
                   style={{
                     backgroundColor:
                       location.pathname === "/contributors"
-                        ? "green"
+                        ? "#117660"
                         : "inherit",
-                    width: "8rem",
+                    width: "9rem",
                     height: "3rem",
                     borderRadius: "10px",
                     display: "flex",
@@ -144,10 +128,8 @@ export default function Navbar({isHomePage}) {
                 <li
                   style={{
                     backgroundColor:
-                      location.pathname === "/ExampleCrop"
-                        ? "green"
-                        : "inherit",
-                    width: "5rem",
+                      location.pathname === "/ExampleCrop" ? "#117660" : "inherit",
+                    width: "7rem",
                     height: "3rem",
                     borderRadius: "10px",
                     display: "flex",
@@ -159,9 +141,8 @@ export default function Navbar({isHomePage}) {
                 </li>
                 <li
                   style={{
-                    backgroundColor:
-                      location.pathname === "/" ? "green" : "inherit",
-                    width: "5rem",
+                    backgroundColor:"#117660",
+                    width: "7rem",
                     height: "3rem",
                     borderRadius: "10px",
                     display: "flex",
@@ -169,57 +150,41 @@ export default function Navbar({isHomePage}) {
                     alignItems: "center",
                   }}
                 >
-                  <Link
-                    onClick={() =>
-                      logout({
-                        logoutParams: { returnTo: window.location.origin },
-                      })
-                    }
-                  >
-                    Log Out
-                  </Link>
+                      <SignOutButton>
+                  <Link>Log Out</Link>
+                  </SignOutButton>
                 </li>
               </>
             )}
-            {/* <li>
-              <button className="modebtn" onClick={changlemode}>
-                {mode === "dark" ? (
-                  <BsMoonFill className="h-6 w-6" />
-                ) : (
-                  <BsSun className="h-6 w-6" />
-                )}
-              </button>
-            </li> */}
           </ul>
         </div>
         <div
           className="visibility-mobile"
           onClick={() => {
             setShowMenu((prev) => !prev);
+            setClosed(!closed)
           }}
         >
-          <img src={menu} alt="" />
+          {closed ?  <img src={close} alt="" srcset="" /> :<img src={menu} style={{cursor:"pointer"}} alt="" /> }
         </div>
       </nav>
+
+
       {showMenu && (
         <div className="mobile-nav">
           <ul>
-            {!isAuthenticated && onHomePage ? (
-              <li onClick={closeMenu}>
-                <Link   onClick={() =>
-                    loginWithRedirect()
-                  }>Log In</Link>
+            {!isSignedIn && onHomePage ? (
+              <li onClick={closeMenu} style={{fontSize:"30px"}}>
+                <SignInButton>
+                <Link>
+                  Sign In
+                </Link>
+                </SignInButton>
               </li>
             ) : (
               <>
                 <li onClick={closeMenu}>
                   <Link to="/">Home</Link>
-                </li>
-                {/* <li onClick={closeMenu}>
-                  <Link to="/about">About</Link>
-                </li> */}
-                <li onClick={closeMenu}>
-                  <Link to="/contact">Contact</Link>
                 </li>
                 <li onClick={closeMenu}>
                   <Link to="/faq">FAQs</Link>
@@ -231,7 +196,12 @@ export default function Navbar({isHomePage}) {
                   <Link to="/contributors">Contributors</Link>
                 </li>
                 <li onClick={closeMenu}>
-                  <Link onClick={() => logout()}>Log Out</Link>
+                <Link to="/ExampleCrop">Example</Link>
+                </li>
+                <li onClick={closeMenu}>
+                  <SignOutButton>
+                  <Link>Log Out</Link>
+                  </SignOutButton>
                 </li>
               </>
             )}
